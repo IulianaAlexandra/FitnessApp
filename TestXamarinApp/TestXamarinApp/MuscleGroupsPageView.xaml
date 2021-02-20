@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:TestXamarinApp.MuscleGroups"
+             x:Class="TestXamarinApp.MuscleGroupsPageView">
+    <ContentPage.BindingContext>
+        <local:MuscleGroupsViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Lista grupe" FontSize="Large" HorizontalTextAlignment="Center"/>
+                <Label Text="Antrenament"/>
+                <Image Source="arms.jpg"></Image>
+                <Button Text="Vizualizare antrenament" TextColor="White" BackgroundColor="Gray"/>
+                <Label Text="Antrenament pentru abdomen"/>
+                <Image Source="abs.jpg"></Image>
+                <Button Text="Vizualizare antrenament" TextColor="White" BackgroundColor="Gray"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
